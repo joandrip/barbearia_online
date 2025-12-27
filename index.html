@@ -1,23 +1,93 @@
-{% extends "base.html" %}
-{% block content %}
-<div class="text-center mt-5">
-    <h1>Bem-vindo à Barbearia Online!</h1>
-    <p class="lead">Agende seu corte de cabelo de forma rápida e prática.</p>
-    <a class="btn btn-primary btn-lg" href="/agendar">Agendar Corte</a>
-</div>
-{% endblock %}
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Projeto Python</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Online</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        a.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a.btn:hover {
+            background-color: #c0392b;
+        }
+
+        section {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo ao meu projeto Python!</h1>
-    <p>Este projeto está disponível no GitHub:
-       <a href="https://github.com/USERNAME/REPO">Clique aqui para acessar o repositório</a>
-    </p>
+    <header>
+        <h1>Bem-vindo à Barbearia Online!</h1>
+        <p>Agende seu corte de cabelo de forma rápida e prática.</p>
+        <a href="/agendar" class="btn">Agendar Corte</a>
+    </header>
+
+    <section>
+        <h2>Sobre o Projeto</h2>
+        <p>Bem-vindo ao meu projeto Python!</p>
+        <p>Este projeto está disponível no GitHub:
+            <a href="https://github.com/USERNAME/REPO" target="_blank">Clique aqui para acessar o repositório</a>
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2025 Barbearia Online. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
-
