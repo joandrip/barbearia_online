@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Horários Agendados</h2>
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Data e Hora</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for reserva in reservas %}
+        <tr>
+            <td>{{ reserva.nome }}</td>
+            <td>{{ reserva.telefone }}</td>
+            <td>{{ reserva.data_horario }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
